@@ -167,16 +167,23 @@ h1, h2, h3, h4, .logo {
 .logo{
     display:flex;
     align-items:center;
-    gap:12px;
-
-    flex-shrink:0;
-
     font-size:1.5rem;
     font-weight:600;
-
-    letter-spacing:1px;
+    gap:8px;
+    flex-shrink:0;
     text-transform:uppercase;
+    letter-spacing:1px;
 }
+
+.logo-main{
+    display:inline-block;
+}
+
+.logo-sub{
+    display:inline-block;
+}
+    
+
 
 .logo-icon{
     width:34px;
@@ -1015,4 +1022,28 @@ h1, h2, h3, h4, .logo {
         align-items: center;
         text-align: left;
     }
+}
+
+@media (max-width:768px){
+
+    .logo{
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:0;
+
+        line-height:1;
+    }
+
+    .logo-main{
+        font-size:1.2rem;
+    }
+
+    .logo-sub{
+        font-size:.95rem;
+    }
+
 }
